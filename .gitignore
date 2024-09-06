@@ -1,8 +1,0 @@
-.venv
-.vscode
-llava
-dependencies
-aws_lambda_artifact.zip
-main.py
-node_modules
-.vercel
