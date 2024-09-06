@@ -50,7 +50,7 @@ async def generate_text(input_data: ImagePromptInput):
         outputs = pipe(image, prompt=full_prompt, generate_kwargs={"max_new_tokens": 200})
 
         # Return generated text
-        generated_text = outputs[0]['generated_text']
+        generated_text = outputs[0]['generated_text'] #type: ignore
         return {"response": generated_text}
 
     except Exception as e:
